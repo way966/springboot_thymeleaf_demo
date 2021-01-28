@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index06</title>
+</head>
+<body>
+当前时间：<span th:text="${#dates.format(date,'yyyy年MM月dd日 hh:mm:ss')}"></span>
+<br>
+<!--数字格式化  参数一：接收变量  参数二：整数位保留一位 0.12 .12  参数三：小数位保留两位 并四舍五入 -->
+数字格式化：<span th:text="${#numbers.formatDecimal(number,1,2)}"></span>
+<br>
+<span th:text="${#strings.abbreviate(str,60)}"></span><br>
+
+<span th:text="${#strings.substring(str,1,40)}"></span><br>
+
+<span th:if="${#strings.isEmpty(str)}">1234</span>
+</body>
+</html>
