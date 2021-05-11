@@ -10,5 +10,6 @@ package com.offcn.controller;
 public class TestController03 {
     public void test() {
         System.out.println("show thymeleaf");
+        System.out.println("first update");
     }
 }
