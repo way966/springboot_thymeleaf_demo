@@ -6,7 +6,9 @@
     <link rel="stylesheet" type="text/css" href="../static/css/pages-cart.css" th:href="@{/css/pages-cart.css}"/>
 </head>
 <body>
+    <!--thymeleaf-->
     <h1 th:if="${flag=='yes'}">中公教育</h1>
+    <!--unless == if not -->
     <h1 th:unless="${flag=='yes'}">优就业</h1>
 
     <div th:switch="${menu}">
