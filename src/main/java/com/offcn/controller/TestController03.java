@@ -12,10 +12,4 @@ public class TestController03 {
         System.out.println("show thymeleaf");
         System.out.println("first update");
     }
-    
-    public static void main(String[] args) {
-        while (true) {
-        
-        }
-    }
 }
